@@ -32,7 +32,7 @@ class Round(models.Model):
     name = models.CharField(max_length=50)
     caliber = models.ForeignKey(Caliber)
     purpose = models.ForeignKey(Purpose)
-    year = models.DateField('date created')
+    year = models.IntegerField(max_length=2)
     manufacturer = models.ForeignKey(Company)
 
     def __unicode__(self):
