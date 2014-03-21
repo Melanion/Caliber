@@ -1,4 +1,3 @@
-Running `python manage.py dumpdata --indent=2` attached to terminal... up, run.1647
 [
 {
   "pk": 1, 
