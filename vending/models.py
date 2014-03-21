@@ -24,7 +24,6 @@ class Caliber(models.Model):
 
 class Purpose(models.Model):
     description = models.CharField(max_length=50)
-    round_name = models.ForeignKey('Round', related_name='round_name_set')
 
     def __unicode__(self):
         return self.description
