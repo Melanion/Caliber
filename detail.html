@@ -1,0 +1,9 @@
+{% if round %}
+    <p>Round: {{ round.name }}</p>
+    <p>Caliber: {{ round.caliber }}</p>
+    <p>Purpose: {{ round.purpose }}</p>
+    <p>Year issued: {{ round.year }}</p>
+    <p>Manufacturer: {{ round.manufacturer }}</p>
+{% else %}
+    <p>We're sorry, this round doesn't seem to exist. How did you get here?</p>
+{% endif %}
