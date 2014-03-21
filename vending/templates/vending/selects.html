@@ -1,19 +1,28 @@
 
-{% if round_list %}
-    <ul>
-        {% for round in round_list %}
-            <li><a href="/polls/{{ round.id }}/">{{ round.name }}</a></li>
-        {% endfor %}
-    </ul>
-{% else %}
-    <p>We're sorry, no rounds are available at this time.</p>
-{% endif %}
-
-
-
 <select name="caliber_field">
     {% for caliber in caliber_list %}
         <option value="{{ caliber.id }}">{{ caliber.name }}</option>
     {% endfor %}
-</option>
+</select>
+
+
+<select name="purpose_field">
+    {% for purpose in purpose_list %}
+        <option value="{{ purpose.id }}">{{ purpose.name }}</option>
+    {% endfor %}
+</select>
+
+
+<select name="company_field">
+    {% for company in company_list %}
+        <option value="{{ company.id }}">{{ company.name }}</option>
+    {% endfor %}
+</select>
+
+
+<select name="weapon_field">
+    {% for weapon in weapon_list %}
+        <option value="{{ weapon.id }}">{{ weapon.name }}</option>
+    {% endfor %}
+</select>
 
