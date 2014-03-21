@@ -12,7 +12,6 @@ class Company(models.Model):
 class Weapon(models.Model):
     name = models.CharField(max_length=50)
     weapon_type = models.CharField(max_length=50)
-    manufacturer = models.ForeignKey(Company)
 
     def __unicode__(self):
         return self.name
