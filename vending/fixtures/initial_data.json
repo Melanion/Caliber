@@ -1,1397 +1,2004 @@
 [
 {
   "pk": 1, 
-  "model": "contenttypes.contenttype", 
   "fields": {
-    "name": "log entry", 
     "app_label": "admin", 
-    "model": "logentry"
-  }
+    "model": "logentry", 
+    "name": "log entry"
+  }, 
+  "model": "contenttypes.contenttype"
 },
 {
   "pk": 2, 
-  "model": "contenttypes.contenttype", 
   "fields": {
-    "name": "permission", 
     "app_label": "auth", 
-    "model": "permission"
-  }
+    "model": "permission", 
+    "name": "permission"
+  }, 
+  "model": "contenttypes.contenttype"
 },
 {
   "pk": 3, 
-  "model": "contenttypes.contenttype", 
   "fields": {
-    "name": "group", 
     "app_label": "auth", 
-    "model": "group"
-  }
+    "model": "group", 
+    "name": "group"
+  }, 
+  "model": "contenttypes.contenttype"
 },
 {
   "pk": 4, 
-  "model": "contenttypes.contenttype", 
   "fields": {
-    "name": "user", 
     "app_label": "auth", 
-    "model": "user"
-  }
+    "model": "user", 
+    "name": "user"
+  }, 
+  "model": "contenttypes.contenttype"
 },
 {
   "pk": 5, 
-  "model": "contenttypes.contenttype", 
   "fields": {
-    "name": "content type", 
     "app_label": "contenttypes", 
-    "model": "contenttype"
-  }
+    "model": "contenttype", 
+    "name": "content type"
+  }, 
+  "model": "contenttypes.contenttype"
 },
 {
   "pk": 6, 
-  "model": "contenttypes.contenttype", 
   "fields": {
-    "name": "session", 
     "app_label": "sessions", 
-    "model": "session"
-  }
+    "model": "session", 
+    "name": "session"
+  }, 
+  "model": "contenttypes.contenttype"
 },
 {
   "pk": 7, 
-  "model": "contenttypes.contenttype", 
   "fields": {
-    "name": "company", 
     "app_label": "vending", 
-    "model": "company"
-  }
+    "model": "company", 
+    "name": "company"
+  }, 
+  "model": "contenttypes.contenttype"
 },
 {
   "pk": 8, 
-  "model": "contenttypes.contenttype", 
   "fields": {
-    "name": "weapon", 
     "app_label": "vending", 
-    "model": "weapon"
-  }
+    "model": "weapon", 
+    "name": "weapon"
+  }, 
+  "model": "contenttypes.contenttype"
 },
 {
   "pk": 9, 
-  "model": "contenttypes.contenttype", 
   "fields": {
-    "name": "caliber", 
     "app_label": "vending", 
-    "model": "caliber"
-  }
+    "model": "caliber", 
+    "name": "caliber"
+  }, 
+  "model": "contenttypes.contenttype"
 },
 {
   "pk": 10, 
-  "model": "contenttypes.contenttype", 
   "fields": {
-    "name": "purpose", 
     "app_label": "vending", 
-    "model": "purpose"
-  }
+    "model": "purpose", 
+    "name": "purpose"
+  }, 
+  "model": "contenttypes.contenttype"
 },
 {
   "pk": 11, 
-  "model": "contenttypes.contenttype", 
   "fields": {
-    "name": "round", 
     "app_label": "vending", 
-    "model": "round"
-  }
+    "model": "round", 
+    "name": "round"
+  }, 
+  "model": "contenttypes.contenttype"
 },
 {
   "pk": "3yv0ftz22dup72b034vx4snqcy6090jd", 
-  "model": "sessions.session", 
   "fields": {
     "session_data": "N2NlYjA1NDc5MDVmNmM2NTg3YzczYzg0MDdmMzJmMWE4MGJlMzM4Yzp7Il9hdXRoX3VzZXJfaWQiOjEsIl9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIn0=", 
     "expire_date": "2014-04-04T14:45:47.869Z"
-  }
+  }, 
+  "model": "sessions.session"
+},
+{
+  "pk": "83p7d0gl5z8rhh4a184vwvouwbsylq27", 
+  "fields": {
+    "session_data": "MWY5MjA0MDlhNjMwNGIwZmY5NTRjMmVkMzVkNzA2MDZjZGU4OTg1Zjp7Il9hdXRoX3VzZXJfYmFja2VuZCI6ImRqYW5nby5jb250cmliLmF1dGguYmFja2VuZHMuTW9kZWxCYWNrZW5kIiwiX2F1dGhfdXNlcl9pZCI6MX0=", 
+    "expire_date": "2014-04-04T16:03:17.599Z"
+  }, 
+  "model": "sessions.session"
 },
 {
   "pk": 1, 
-  "model": "vending.company", 
   "fields": {
-    "name": "Advanced Armament Corp", 
-    "country": "United States"
-  }
+    "country": "United States", 
+    "name": "Advanced Armament Corp"
+  }, 
+  "model": "vending.company"
 },
 {
   "pk": 2, 
-  "model": "vending.company", 
   "fields": {
-    "name": "Ruger", 
-    "country": "United States"
-  }
+    "country": "United States", 
+    "name": "Ruger"
+  }, 
+  "model": "vending.company"
 },
 {
   "pk": 3, 
-  "model": "vending.company", 
   "fields": {
-    "name": "Remington", 
-    "country": "United States"
-  }
+    "country": "United States", 
+    "name": "Remington"
+  }, 
+  "model": "vending.company"
 },
 {
   "pk": 4, 
-  "model": "vending.company", 
   "fields": {
-    "name": "Smith & Wesson", 
-    "country": "United States"
-  }
+    "country": "United States", 
+    "name": "Smith & Wesson"
+  }, 
+  "model": "vending.company"
 },
 {
   "pk": 5, 
-  "model": "vending.company", 
   "fields": {
-    "name": "Winchester", 
-    "country": "U"
-  }
+    "country": "United States", 
+    "name": "Winchester"
+  }, 
+  "model": "vending.company"
 },
 {
   "pk": 6, 
-  "model": "vending.company", 
   "fields": {
-    "name": "Holland & Holland", 
-    "country": "United Kingdom"
-  }
+    "country": "United Kingdom", 
+    "name": "Holland & Holland"
+  }, 
+  "model": "vending.company"
 },
 {
   "pk": 7, 
-  "model": "vending.company", 
   "fields": {
-    "name": "Speer", 
-    "country": "Austria"
-  }
+    "country": "Austria", 
+    "name": "Speer"
+  }, 
+  "model": "vending.company"
 },
 {
   "pk": 8, 
-  "model": "vending.company", 
   "fields": {
-    "name": "SIG Sauer", 
-    "country": "Germany"
-  }
+    "country": "Germany", 
+    "name": "SIG Sauer"
+  }, 
+  "model": "vending.company"
 },
 {
   "pk": 9, 
-  "model": "vending.company", 
   "fields": {
-    "name": "Glock", 
-    "country": "Austria"
-  }
+    "country": "Austria", 
+    "name": "Glock"
+  }, 
+  "model": "vending.company"
 },
 {
   "pk": 10, 
-  "model": "vending.company", 
   "fields": {
-    "name": "FFV Norma AB", 
-    "country": "Sweden"
-  }
+    "country": "Sweden", 
+    "name": "FFV Norma AB"
+  }, 
+  "model": "vending.company"
 },
 {
   "pk": 11, 
-  "model": "vending.company", 
   "fields": {
-    "name": "USSR", 
-    "country": "USSR"
-  }
+    "country": "USSR", 
+    "name": "USSR"
+  }, 
+  "model": "vending.company"
 },
 {
   "pk": 12, 
-  "model": "vending.company", 
   "fields": {
-    "name": "Arisaka", 
-    "country": "Japan"
-  }
+    "country": "Japan", 
+    "name": "Arisaka"
+  }, 
+  "model": "vending.company"
 },
 {
   "pk": 1, 
-  "model": "vending.weapon", 
   "fields": {
     "name": "Rifle"
-  }
+  }, 
+  "model": "vending.weapon"
 },
 {
   "pk": 2, 
-  "model": "vending.weapon", 
   "fields": {
     "name": "Handgun"
-  }
+  }, 
+  "model": "vending.weapon"
 },
 {
   "pk": 3, 
-  "model": "vending.weapon", 
   "fields": {
     "name": "Submachine Gun"
-  }
+  }, 
+  "model": "vending.weapon"
 },
 {
   "pk": 2, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": ".297", 
-    "weapon_type": 1
-  }
+    "weapon_type": 1, 
+    "name": ".297"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 3, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": ".22", 
-    "weapon_type": 1
-  }
+    "weapon_type": 1, 
+    "name": ".22"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 5, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": ".303", 
-    "weapon_type": 1
-  }
+    "weapon_type": 1, 
+    "name": ".303"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 6, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": ".30", 
-    "weapon_type": 1
-  }
+    "weapon_type": 1, 
+    "name": ".30"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 7, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": ".17", 
-    "weapon_type": 1
-  }
+    "weapon_type": 1, 
+    "name": ".17"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 8, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": "4.6x30", 
-    "weapon_type": 1
-  }
+    "weapon_type": 1, 
+    "name": "4.6x30"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 9, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": "5.7x28", 
-    "weapon_type": 1
-  }
+    "weapon_type": 1, 
+    "name": "5.7x28"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 10, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": ".221", 
-    "weapon_type": 1
-  }
+    "weapon_type": 1, 
+    "name": ".221"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 11, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": "7.92x33", 
-    "weapon_type": 1
-  }
+    "weapon_type": 1, 
+    "name": "7.92x33"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 12, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": "5.6x39", 
-    "weapon_type": 1
-  }
+    "weapon_type": 1, 
+    "name": "5.6x39"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 13, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": "4.6x36", 
-    "weapon_type": 1
-  }
+    "weapon_type": 1, 
+    "name": "4.6x36"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 14, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": "7.62x39", 
-    "weapon_type": 1
-  }
+    "weapon_type": 1, 
+    "name": "7.62x39"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 15, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": ".223", 
-    "weapon_type": 1
-  }
+    "weapon_type": 1, 
+    "name": ".223"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 16, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": "5.56x45", 
-    "weapon_type": 1
-  }
+    "weapon_type": 1, 
+    "name": "5.56x45"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 17, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": ".30-30", 
-    "weapon_type": 1
-  }
+    "weapon_type": 1, 
+    "name": ".30-30"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 18, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": ".450", 
-    "weapon_type": 1
-  }
+    "weapon_type": 1, 
+    "name": ".450"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 19, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": "9mm", 
-    "weapon_type": 1
-  }
+    "weapon_type": 1, 
+    "name": "9mm"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 20, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": "7mm", 
-    "weapon_type": 1
-  }
+    "weapon_type": 1, 
+    "name": "7mm"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 21, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": ".30-06", 
-    "weapon_type": 1
-  }
+    "weapon_type": 1, 
+    "name": ".30-06"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 22, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": ".357", 
-    "weapon_type": 2
-  }
+    "weapon_type": 2, 
+    "name": ".357"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 23, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": ".38", 
-    "weapon_type": 2
-  }
+    "weapon_type": 2, 
+    "name": ".38"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 24, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": ".45", 
-    "weapon_type": 2
-  }
+    "weapon_type": 2, 
+    "name": ".45"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 25, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": "7.62x25", 
-    "weapon_type": 2
-  }
+    "weapon_type": 2, 
+    "name": "7.62x25"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 26, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": "9x19", 
-    "weapon_type": 2
-  }
+    "weapon_type": 2, 
+    "name": "9x19"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 27, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": ".44", 
-    "weapon_type": 2
-  }
+    "weapon_type": 2, 
+    "name": ".44"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 28, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": ".38", 
-    "weapon_type": 2
-  }
+    "weapon_type": 2, 
+    "name": ".38"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 29, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": ".224", 
-    "weapon_type": 2
-  }
+    "weapon_type": 2, 
+    "name": ".224"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 30, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": "5.7x28", 
-    "weapon_type": 2
-  }
+    "weapon_type": 2, 
+    "name": "5.7x28"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 31, 
-  "model": "vending.caliber", 
   "fields": {
-    "name": "5.45x39", 
-    "weapon_type": 1
-  }
-},
-{
-  "pk": 1, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can add log entry", 
-    "content_type": 1, 
-    "codename": "add_logentry"
-  }
-},
-{
-  "pk": 2, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can change log entry", 
-    "content_type": 1, 
-    "codename": "change_logentry"
-  }
-},
-{
-  "pk": 3, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can delete log entry", 
-    "content_type": 1, 
-    "codename": "delete_logentry"
-  }
-},
-{
-  "pk": 4, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can add permission", 
-    "content_type": 2, 
-    "codename": "add_permission"
-  }
-},
-{
-  "pk": 5, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can change permission", 
-    "content_type": 2, 
-    "codename": "change_permission"
-  }
-},
-{
-  "pk": 6, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can delete permission", 
-    "content_type": 2, 
-    "codename": "delete_permission"
-  }
-},
-{
-  "pk": 7, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can add group", 
-    "content_type": 3, 
-    "codename": "add_group"
-  }
-},
-{
-  "pk": 8, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can change group", 
-    "content_type": 3, 
-    "codename": "change_group"
-  }
-},
-{
-  "pk": 9, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can delete group", 
-    "content_type": 3, 
-    "codename": "delete_group"
-  }
-},
-{
-  "pk": 10, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can add user", 
-    "content_type": 4, 
-    "codename": "add_user"
-  }
-},
-{
-  "pk": 11, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can change user", 
-    "content_type": 4, 
-    "codename": "change_user"
-  }
-},
-{
-  "pk": 12, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can delete user", 
-    "content_type": 4, 
-    "codename": "delete_user"
-  }
-},
-{
-  "pk": 13, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can add content type", 
-    "content_type": 5, 
-    "codename": "add_contenttype"
-  }
-},
-{
-  "pk": 14, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can change content type", 
-    "content_type": 5, 
-    "codename": "change_contenttype"
-  }
-},
-{
-  "pk": 15, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can delete content type", 
-    "content_type": 5, 
-    "codename": "delete_contenttype"
-  }
-},
-{
-  "pk": 16, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can add session", 
-    "content_type": 6, 
-    "codename": "add_session"
-  }
-},
-{
-  "pk": 17, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can change session", 
-    "content_type": 6, 
-    "codename": "change_session"
-  }
-},
-{
-  "pk": 18, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can delete session", 
-    "content_type": 6, 
-    "codename": "delete_session"
-  }
-},
-{
-  "pk": 19, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can add company", 
-    "content_type": 7, 
-    "codename": "add_company"
-  }
-},
-{
-  "pk": 20, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can change company", 
-    "content_type": 7, 
-    "codename": "change_company"
-  }
-},
-{
-  "pk": 21, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can delete company", 
-    "content_type": 7, 
-    "codename": "delete_company"
-  }
-},
-{
-  "pk": 22, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can add weapon", 
-    "content_type": 8, 
-    "codename": "add_weapon"
-  }
-},
-{
-  "pk": 23, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can change weapon", 
-    "content_type": 8, 
-    "codename": "change_weapon"
-  }
-},
-{
-  "pk": 24, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can delete weapon", 
-    "content_type": 8, 
-    "codename": "delete_weapon"
-  }
-},
-{
-  "pk": 25, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can add caliber", 
-    "content_type": 9, 
-    "codename": "add_caliber"
-  }
-},
-{
-  "pk": 26, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can change caliber", 
-    "content_type": 9, 
-    "codename": "change_caliber"
-  }
-},
-{
-  "pk": 27, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can delete caliber", 
-    "content_type": 9, 
-    "codename": "delete_caliber"
-  }
-},
-{
-  "pk": 28, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can add purpose", 
-    "content_type": 10, 
-    "codename": "add_purpose"
-  }
-},
-{
-  "pk": 29, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can change purpose", 
-    "content_type": 10, 
-    "codename": "change_purpose"
-  }
-},
-{
-  "pk": 30, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can delete purpose", 
-    "content_type": 10, 
-    "codename": "delete_purpose"
-  }
-},
-{
-  "pk": 31, 
-  "model": "auth.permission", 
-  "fields": {
-    "name": "Can add round", 
-    "content_type": 11, 
-    "codename": "add_round"
-  }
+    "weapon_type": 1, 
+    "name": "5.45x39"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 32, 
-  "model": "auth.permission", 
   "fields": {
-    "name": "Can change round", 
-    "content_type": 11, 
-    "codename": "change_round"
-  }
+    "weapon_type": 1, 
+    "name": ".308"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 33, 
-  "model": "auth.permission", 
   "fields": {
-    "name": "Can delete round", 
-    "content_type": 11, 
-    "codename": "delete_round"
-  }
-},
-{
-  "pk": 1, 
-  "model": "auth.user", 
-  "fields": {
-    "first_name": "", 
-    "is_staff": true, 
-    "username": "wes", 
-    "last_login": "2014-03-21T14:45:47.855Z", 
-    "user_permissions": [], 
-    "is_superuser": true, 
-    "password": "pbkdf2_sha256$12000$J7zJ7VXj7ZYT$nMII02tg4WwasKVgTrYmx8DI9IRL7Q9UjNi6JDBuTro=", 
-    "is_active": true, 
-    "email": "megakeen@gmail.com", 
-    "groups": [], 
-    "date_joined": "2014-03-21T14:45:39.750Z", 
-    "last_name": ""
-  }
-},
-{
-  "pk": 1, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "1", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:45:54.600Z", 
-    "content_type": 8, 
-    "change_message": "", 
-    "object_repr": "Rifle"
-  }
-},
-{
-  "pk": 2, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "2", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:46:01.616Z", 
-    "content_type": 8, 
-    "change_message": "", 
-    "object_repr": "Handgun"
-  }
-},
-{
-  "pk": 3, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "3", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:46:36.458Z", 
-    "content_type": 8, 
-    "change_message": "", 
-    "object_repr": "Submachine Gun"
-  }
-},
-{
-  "pk": 4, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "1", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:50:52.161Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": "35mm"
-  }
-},
-{
-  "pk": 5, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "2", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:53:04.226Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": ".297"
-  }
-},
-{
-  "pk": 6, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "1", 
-    "action_flag": 3, 
-    "action_time": "2014-03-21T14:53:09.643Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": "35mm"
-  }
-},
-{
-  "pk": 7, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "3", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:53:20.304Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": ".22"
-  }
-},
-{
-  "pk": 8, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "4", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:53:27.418Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": ".17"
-  }
-},
-{
-  "pk": 9, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "5", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:53:37.796Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": ".303"
-  }
-},
-{
-  "pk": 10, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "6", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:53:52.383Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": ".30"
-  }
-},
-{
-  "pk": 11, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "7", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:54:05.806Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": ".17"
-  }
-},
-{
-  "pk": 12, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "4", 
-    "action_flag": 3, 
-    "action_time": "2014-03-21T14:54:15.961Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": ".17"
-  }
-},
-{
-  "pk": 13, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "8", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:54:31.919Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": "4.6x30"
-  }
-},
-{
-  "pk": 14, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "9", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:54:42.270Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": "5.7x28"
-  }
-},
-{
-  "pk": 15, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "10", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:54:56.876Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": ".221"
-  }
-},
-{
-  "pk": 16, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "11", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:55:10.109Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": "7.92x33"
-  }
-},
-{
-  "pk": 17, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "12", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:55:21.348Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": "5.6x39"
-  }
-},
-{
-  "pk": 18, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "13", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:55:34.403Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": "4.6x36"
-  }
-},
-{
-  "pk": 19, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "14", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:55:50.850Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": "7.62x39"
-  }
-},
-{
-  "pk": 20, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "15", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:56:00.665Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": ".223"
-  }
-},
-{
-  "pk": 21, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "16", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:56:18.446Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": "5.56x45"
-  }
-},
-{
-  "pk": 22, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "17", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:56:28.207Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": ".30-30"
-  }
-},
-{
-  "pk": 23, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "18", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:56:36.029Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": ".450"
-  }
-},
-{
-  "pk": 24, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "19", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:56:49.431Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": "9mm"
-  }
-},
-{
-  "pk": 25, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "20", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:57:14.935Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": "7mm"
-  }
-},
-{
-  "pk": 26, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "21", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:57:41.787Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": ".30-06"
-  }
-},
-{
-  "pk": 27, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "22", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:58:19.196Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": ".357"
-  }
-},
-{
-  "pk": 28, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "23", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:58:28.517Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": ".38"
-  }
-},
-{
-  "pk": 29, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "24", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:58:37.258Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": ".45"
-  }
-},
-{
-  "pk": 30, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "25", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:58:51.660Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": "7.62x25"
-  }
-},
-{
-  "pk": 31, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "26", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:59:02.925Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": "9x19"
-  }
-},
-{
-  "pk": 32, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "27", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:59:20.622Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": ".44"
-  }
-},
-{
-  "pk": 33, 
-  "model": "admin.logentry", 
-  "fields": {
-    "user": 1, 
-    "object_id": "28", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:59:35.535Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": ".38"
-  }
+    "weapon_type": 2, 
+    "name": ".25"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 34, 
-  "model": "admin.logentry", 
   "fields": {
-    "user": 1, 
-    "object_id": "29", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T14:59:53.577Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": ".224"
-  }
+    "weapon_type": 1, 
+    "name": ".300"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 35, 
-  "model": "admin.logentry", 
   "fields": {
-    "user": 1, 
-    "object_id": "30", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T15:00:04.223Z", 
-    "content_type": 9, 
-    "change_message": "", 
-    "object_repr": "5.7x28"
-  }
+    "weapon_type": 2, 
+    "name": "5mm"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 36, 
-  "model": "admin.logentry", 
   "fields": {
-    "user": 1, 
-    "object_id": "1", 
-    "action_flag": 1, 
-    "action_time": "2014-03-21T15:01:34.428Z", 
-    "content_type": 7, 
-    "change_message": "", 
-    "object_repr": "Advanced Armament Corp"
-  }
+    "weapon_type": 2, 
+    "name": ".224"
+  }, 
+  "model": "vending.caliber"
 },
 {
   "pk": 37, 
-  "model": "admin.logentry", 
   "fields": {
-    "user": 1, 
+    "weapon_type": 2, 
+    "name": ".35"
+  }, 
+  "model": "vending.caliber"
+},
+{
+  "pk": 1, 
+  "fields": {
+    "description": "Close-Quarters Combat"
+  }, 
+  "model": "vending.purpose"
+},
+{
+  "pk": 2, 
+  "fields": {
+    "description": "Short Range"
+  }, 
+  "model": "vending.purpose"
+},
+{
+  "pk": 3, 
+  "fields": {
+    "description": "Medium Range"
+  }, 
+  "model": "vending.purpose"
+},
+{
+  "pk": 4, 
+  "fields": {
+    "description": "Long Range"
+  }, 
+  "model": "vending.purpose"
+},
+{
+  "pk": 5, 
+  "fields": {
+    "description": "Extremely Long Range"
+  }, 
+  "model": "vending.purpose"
+},
+{
+  "pk": 1, 
+  "fields": {
+    "purpose": 1, 
+    "caliber": 14, 
+    "manufacturer": 1, 
+    "year": 2011, 
+    "name": "300 AAC Blackout"
+  }, 
+  "model": "vending.round"
+},
+{
+  "pk": 2, 
+  "fields": {
+    "purpose": 4, 
+    "caliber": 32, 
+    "manufacturer": 3, 
+    "year": 2006, 
+    "name": ".308 Marlin Express"
+  }, 
+  "model": "vending.round"
+},
+{
+  "pk": 3, 
+  "fields": {
+    "purpose": 2, 
+    "caliber": 24, 
+    "manufacturer": 9, 
+    "year": 2003, 
+    "name": ".45 GAP"
+  }, 
+  "model": "vending.round"
+},
+{
+  "pk": 4, 
+  "fields": {
+    "purpose": 2, 
+    "caliber": 33, 
+    "manufacturer": 4, 
+    "year": 2004, 
+    "name": ".25 WSSM"
+  }, 
+  "model": "vending.round"
+},
+{
+  "pk": 5, 
+  "fields": {
+    "purpose": 3, 
+    "caliber": 3, 
+    "manufacturer": 5, 
+    "year": 1890, 
+    "name": ".22 Winchester Rimfire"
+  }, 
+  "model": "vending.round"
+},
+{
+  "pk": 6, 
+  "fields": {
+    "purpose": 4, 
+    "caliber": 10, 
+    "manufacturer": 3, 
+    "year": 1963, 
+    "name": ".221 Remington Fireball"
+  }, 
+  "model": "vending.round"
+},
+{
+  "pk": 7, 
+  "fields": {
+    "purpose": 4, 
+    "caliber": 34, 
+    "manufacturer": 6, 
+    "year": 1925, 
+    "name": ".300 H&H Magnum"
+  }, 
+  "model": "vending.round"
+},
+{
+  "pk": 8, 
+  "fields": {
+    "purpose": 3, 
+    "caliber": 5, 
+    "manufacturer": 6, 
+    "year": 1945, 
+    "name": ".303 British"
+  }, 
+  "model": "vending.round"
+},
+{
+  "pk": 9, 
+  "fields": {
+    "purpose": 4, 
+    "caliber": 16, 
+    "manufacturer": 3, 
+    "year": 1962, 
+    "name": "5.56\u00d745mm NATO"
+  }, 
+  "model": "vending.round"
+},
+{
+  "pk": 10, 
+  "fields": {
+    "purpose": 3, 
+    "caliber": 20, 
+    "manufacturer": 5, 
+    "year": 2001, 
+    "name": "7mm Winchester Short Magnum"
+  }, 
+  "model": "vending.round"
+},
+{
+  "pk": 11, 
+  "fields": {
+    "purpose": 2, 
+    "caliber": 35, 
+    "manufacturer": 3, 
+    "year": 1969, 
+    "name": "5 mm Remington Rimfire Magnum"
+  }, 
+  "model": "vending.round"
+},
+{
+  "pk": 12, 
+  "fields": {
+    "purpose": 2, 
+    "caliber": 36, 
+    "manufacturer": 9, 
+    "year": 1991, 
+    "name": ".224 Boz"
+  }, 
+  "model": "vending.round"
+},
+{
+  "pk": 13, 
+  "fields": {
+    "purpose": 1, 
+    "caliber": 37, 
+    "manufacturer": 4, 
+    "year": 1912, 
+    "name": ".35 S&W Auto"
+  }, 
+  "model": "vending.round"
+},
+{
+  "pk": 14, 
+  "fields": {
+    "purpose": 2, 
+    "caliber": 22, 
+    "manufacturer": 8, 
+    "year": 1994, 
+    "name": ".357 SIG"
+  }, 
+  "model": "vending.round"
+},
+{
+  "pk": 15, 
+  "fields": {
+    "purpose": 2, 
+    "caliber": 19, 
+    "manufacturer": 11, 
+    "year": 1946, 
+    "name": "9 mm Makarov"
+  }, 
+  "model": "vending.round"
+},
+{
+  "pk": 1, 
+  "fields": {
+    "codename": "add_logentry", 
+    "content_type": 1, 
+    "name": "Can add log entry"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 2, 
+  "fields": {
+    "codename": "change_logentry", 
+    "content_type": 1, 
+    "name": "Can change log entry"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 3, 
+  "fields": {
+    "codename": "delete_logentry", 
+    "content_type": 1, 
+    "name": "Can delete log entry"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 4, 
+  "fields": {
+    "codename": "add_permission", 
+    "content_type": 2, 
+    "name": "Can add permission"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 5, 
+  "fields": {
+    "codename": "change_permission", 
+    "content_type": 2, 
+    "name": "Can change permission"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 6, 
+  "fields": {
+    "codename": "delete_permission", 
+    "content_type": 2, 
+    "name": "Can delete permission"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 7, 
+  "fields": {
+    "codename": "add_group", 
+    "content_type": 3, 
+    "name": "Can add group"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 8, 
+  "fields": {
+    "codename": "change_group", 
+    "content_type": 3, 
+    "name": "Can change group"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 9, 
+  "fields": {
+    "codename": "delete_group", 
+    "content_type": 3, 
+    "name": "Can delete group"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 10, 
+  "fields": {
+    "codename": "add_user", 
+    "content_type": 4, 
+    "name": "Can add user"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 11, 
+  "fields": {
+    "codename": "change_user", 
+    "content_type": 4, 
+    "name": "Can change user"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 12, 
+  "fields": {
+    "codename": "delete_user", 
+    "content_type": 4, 
+    "name": "Can delete user"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 13, 
+  "fields": {
+    "codename": "add_contenttype", 
+    "content_type": 5, 
+    "name": "Can add content type"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 14, 
+  "fields": {
+    "codename": "change_contenttype", 
+    "content_type": 5, 
+    "name": "Can change content type"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 15, 
+  "fields": {
+    "codename": "delete_contenttype", 
+    "content_type": 5, 
+    "name": "Can delete content type"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 16, 
+  "fields": {
+    "codename": "add_session", 
+    "content_type": 6, 
+    "name": "Can add session"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 17, 
+  "fields": {
+    "codename": "change_session", 
+    "content_type": 6, 
+    "name": "Can change session"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 18, 
+  "fields": {
+    "codename": "delete_session", 
+    "content_type": 6, 
+    "name": "Can delete session"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 19, 
+  "fields": {
+    "codename": "add_company", 
+    "content_type": 7, 
+    "name": "Can add company"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 20, 
+  "fields": {
+    "codename": "change_company", 
+    "content_type": 7, 
+    "name": "Can change company"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 21, 
+  "fields": {
+    "codename": "delete_company", 
+    "content_type": 7, 
+    "name": "Can delete company"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 22, 
+  "fields": {
+    "codename": "add_weapon", 
+    "content_type": 8, 
+    "name": "Can add weapon"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 23, 
+  "fields": {
+    "codename": "change_weapon", 
+    "content_type": 8, 
+    "name": "Can change weapon"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 24, 
+  "fields": {
+    "codename": "delete_weapon", 
+    "content_type": 8, 
+    "name": "Can delete weapon"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 25, 
+  "fields": {
+    "codename": "add_caliber", 
+    "content_type": 9, 
+    "name": "Can add caliber"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 26, 
+  "fields": {
+    "codename": "change_caliber", 
+    "content_type": 9, 
+    "name": "Can change caliber"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 27, 
+  "fields": {
+    "codename": "delete_caliber", 
+    "content_type": 9, 
+    "name": "Can delete caliber"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 28, 
+  "fields": {
+    "codename": "add_purpose", 
+    "content_type": 10, 
+    "name": "Can add purpose"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 29, 
+  "fields": {
+    "codename": "change_purpose", 
+    "content_type": 10, 
+    "name": "Can change purpose"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 30, 
+  "fields": {
+    "codename": "delete_purpose", 
+    "content_type": 10, 
+    "name": "Can delete purpose"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 31, 
+  "fields": {
+    "codename": "add_round", 
+    "content_type": 11, 
+    "name": "Can add round"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 32, 
+  "fields": {
+    "codename": "change_round", 
+    "content_type": 11, 
+    "name": "Can change round"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 33, 
+  "fields": {
+    "codename": "delete_round", 
+    "content_type": 11, 
+    "name": "Can delete round"
+  }, 
+  "model": "auth.permission"
+},
+{
+  "pk": 1, 
+  "fields": {
+    "password": "pbkdf2_sha256$12000$J7zJ7VXj7ZYT$nMII02tg4WwasKVgTrYmx8DI9IRL7Q9UjNi6JDBuTro=", 
+    "last_login": "2014-03-21T16:03:17.501Z", 
+    "date_joined": "2014-03-21T14:45:39.750Z", 
+    "groups": [], 
+    "is_staff": true, 
+    "is_active": true, 
+    "email": "megakeen@gmail.com", 
+    "last_name": "", 
+    "first_name": "", 
+    "username": "wes", 
+    "user_permissions": [], 
+    "is_superuser": true
+  }, 
+  "model": "auth.user"
+},
+{
+  "pk": 1, 
+  "fields": {
+    "object_repr": "Rifle", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:45:54.600Z", 
+    "object_id": "1", 
+    "action_flag": 1, 
+    "content_type": 8, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 2, 
+  "fields": {
+    "object_repr": "Handgun", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:46:01.616Z", 
     "object_id": "2", 
     "action_flag": 1, 
-    "action_time": "2014-03-21T15:02:08.511Z", 
-    "content_type": 7, 
+    "content_type": 8, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 3, 
+  "fields": {
+    "object_repr": "Submachine Gun", 
     "change_message": "", 
-    "object_repr": "Ruger"
-  }
+    "action_time": "2014-03-21T14:46:36.458Z", 
+    "object_id": "3", 
+    "action_flag": 1, 
+    "content_type": 8, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 4, 
+  "fields": {
+    "object_repr": "35mm", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:50:52.161Z", 
+    "object_id": "1", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 5, 
+  "fields": {
+    "object_repr": ".297", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:53:04.226Z", 
+    "object_id": "2", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 6, 
+  "fields": {
+    "object_repr": "35mm", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:53:09.643Z", 
+    "object_id": "1", 
+    "action_flag": 3, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 7, 
+  "fields": {
+    "object_repr": ".22", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:53:20.304Z", 
+    "object_id": "3", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 8, 
+  "fields": {
+    "object_repr": ".17", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:53:27.418Z", 
+    "object_id": "4", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 9, 
+  "fields": {
+    "object_repr": ".303", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:53:37.796Z", 
+    "object_id": "5", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 10, 
+  "fields": {
+    "object_repr": ".30", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:53:52.383Z", 
+    "object_id": "6", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 11, 
+  "fields": {
+    "object_repr": ".17", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:54:05.806Z", 
+    "object_id": "7", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 12, 
+  "fields": {
+    "object_repr": ".17", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:54:15.961Z", 
+    "object_id": "4", 
+    "action_flag": 3, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 13, 
+  "fields": {
+    "object_repr": "4.6x30", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:54:31.919Z", 
+    "object_id": "8", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 14, 
+  "fields": {
+    "object_repr": "5.7x28", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:54:42.270Z", 
+    "object_id": "9", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 15, 
+  "fields": {
+    "object_repr": ".221", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:54:56.876Z", 
+    "object_id": "10", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 16, 
+  "fields": {
+    "object_repr": "7.92x33", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:55:10.109Z", 
+    "object_id": "11", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 17, 
+  "fields": {
+    "object_repr": "5.6x39", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:55:21.348Z", 
+    "object_id": "12", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 18, 
+  "fields": {
+    "object_repr": "4.6x36", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:55:34.403Z", 
+    "object_id": "13", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 19, 
+  "fields": {
+    "object_repr": "7.62x39", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:55:50.850Z", 
+    "object_id": "14", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 20, 
+  "fields": {
+    "object_repr": ".223", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:56:00.665Z", 
+    "object_id": "15", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 21, 
+  "fields": {
+    "object_repr": "5.56x45", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:56:18.446Z", 
+    "object_id": "16", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 22, 
+  "fields": {
+    "object_repr": ".30-30", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:56:28.207Z", 
+    "object_id": "17", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 23, 
+  "fields": {
+    "object_repr": ".450", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:56:36.029Z", 
+    "object_id": "18", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 24, 
+  "fields": {
+    "object_repr": "9mm", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:56:49.431Z", 
+    "object_id": "19", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 25, 
+  "fields": {
+    "object_repr": "7mm", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:57:14.935Z", 
+    "object_id": "20", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 26, 
+  "fields": {
+    "object_repr": ".30-06", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:57:41.787Z", 
+    "object_id": "21", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 27, 
+  "fields": {
+    "object_repr": ".357", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:58:19.196Z", 
+    "object_id": "22", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 28, 
+  "fields": {
+    "object_repr": ".38", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:58:28.517Z", 
+    "object_id": "23", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 29, 
+  "fields": {
+    "object_repr": ".45", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:58:37.258Z", 
+    "object_id": "24", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 30, 
+  "fields": {
+    "object_repr": "7.62x25", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:58:51.660Z", 
+    "object_id": "25", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 31, 
+  "fields": {
+    "object_repr": "9x19", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:59:02.925Z", 
+    "object_id": "26", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 32, 
+  "fields": {
+    "object_repr": ".44", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:59:20.622Z", 
+    "object_id": "27", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 33, 
+  "fields": {
+    "object_repr": ".38", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:59:35.535Z", 
+    "object_id": "28", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 34, 
+  "fields": {
+    "object_repr": ".224", 
+    "change_message": "", 
+    "action_time": "2014-03-21T14:59:53.577Z", 
+    "object_id": "29", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 35, 
+  "fields": {
+    "object_repr": "5.7x28", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:00:04.223Z", 
+    "object_id": "30", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 36, 
+  "fields": {
+    "object_repr": "Advanced Armament Corp", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:01:34.428Z", 
+    "object_id": "1", 
+    "action_flag": 1, 
+    "content_type": 7, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 37, 
+  "fields": {
+    "object_repr": "Ruger", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:02:08.511Z", 
+    "object_id": "2", 
+    "action_flag": 1, 
+    "content_type": 7, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
 },
 {
   "pk": 38, 
-  "model": "admin.logentry", 
   "fields": {
-    "user": 1, 
+    "object_repr": "Remington", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:02:15.319Z", 
     "object_id": "3", 
     "action_flag": 1, 
-    "action_time": "2014-03-21T15:02:15.319Z", 
     "content_type": 7, 
-    "change_message": "", 
-    "object_repr": "Remington"
-  }
+    "user": 1
+  }, 
+  "model": "admin.logentry"
 },
 {
   "pk": 39, 
-  "model": "admin.logentry", 
   "fields": {
-    "user": 1, 
+    "object_repr": "Smith & Wesson", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:02:42.663Z", 
     "object_id": "4", 
     "action_flag": 1, 
-    "action_time": "2014-03-21T15:02:42.663Z", 
     "content_type": 7, 
-    "change_message": "", 
-    "object_repr": "Smith & Wesson"
-  }
+    "user": 1
+  }, 
+  "model": "admin.logentry"
 },
 {
   "pk": 40, 
-  "model": "admin.logentry", 
   "fields": {
-    "user": 1, 
+    "object_repr": "Winchester", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:02:48.707Z", 
     "object_id": "5", 
     "action_flag": 1, 
-    "action_time": "2014-03-21T15:02:48.707Z", 
     "content_type": 7, 
-    "change_message": "", 
-    "object_repr": "Winchester"
-  }
+    "user": 1
+  }, 
+  "model": "admin.logentry"
 },
 {
   "pk": 41, 
-  "model": "admin.logentry", 
   "fields": {
-    "user": 1, 
+    "object_repr": "Holland & Holland", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:03:21.588Z", 
     "object_id": "6", 
     "action_flag": 1, 
-    "action_time": "2014-03-21T15:03:21.588Z", 
     "content_type": 7, 
-    "change_message": "", 
-    "object_repr": "Holland & Holland"
-  }
+    "user": 1
+  }, 
+  "model": "admin.logentry"
 },
 {
   "pk": 42, 
-  "model": "admin.logentry", 
   "fields": {
-    "user": 1, 
+    "object_repr": "Speer", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:03:49.515Z", 
     "object_id": "7", 
     "action_flag": 1, 
-    "action_time": "2014-03-21T15:03:49.515Z", 
     "content_type": 7, 
-    "change_message": "", 
-    "object_repr": "Speer"
-  }
+    "user": 1
+  }, 
+  "model": "admin.logentry"
 },
 {
   "pk": 43, 
-  "model": "admin.logentry", 
   "fields": {
-    "user": 1, 
+    "object_repr": "SIG Sauer", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:04:15.696Z", 
     "object_id": "8", 
     "action_flag": 1, 
-    "action_time": "2014-03-21T15:04:15.696Z", 
     "content_type": 7, 
-    "change_message": "", 
-    "object_repr": "SIG Sauer"
-  }
+    "user": 1
+  }, 
+  "model": "admin.logentry"
 },
 {
   "pk": 44, 
-  "model": "admin.logentry", 
   "fields": {
-    "user": 1, 
+    "object_repr": "Glock", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:05:04.832Z", 
     "object_id": "9", 
     "action_flag": 1, 
-    "action_time": "2014-03-21T15:05:04.832Z", 
     "content_type": 7, 
-    "change_message": "", 
-    "object_repr": "Glock"
-  }
+    "user": 1
+  }, 
+  "model": "admin.logentry"
 },
 {
   "pk": 45, 
-  "model": "admin.logentry", 
   "fields": {
-    "user": 1, 
+    "object_repr": "FFV Norma AB", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:05:47.466Z", 
     "object_id": "10", 
     "action_flag": 1, 
-    "action_time": "2014-03-21T15:05:47.466Z", 
     "content_type": 7, 
-    "change_message": "", 
-    "object_repr": "FFV Norma AB"
-  }
+    "user": 1
+  }, 
+  "model": "admin.logentry"
 },
 {
   "pk": 46, 
-  "model": "admin.logentry", 
   "fields": {
-    "user": 1, 
+    "object_repr": "USSR", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:06:23.208Z", 
     "object_id": "11", 
     "action_flag": 1, 
-    "action_time": "2014-03-21T15:06:23.208Z", 
     "content_type": 7, 
-    "change_message": "", 
-    "object_repr": "USSR"
-  }
+    "user": 1
+  }, 
+  "model": "admin.logentry"
 },
 {
   "pk": 47, 
-  "model": "admin.logentry", 
   "fields": {
-    "user": 1, 
+    "object_repr": "5.45x39", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:06:46.364Z", 
     "object_id": "31", 
     "action_flag": 1, 
-    "action_time": "2014-03-21T15:06:46.364Z", 
     "content_type": 9, 
-    "change_message": "", 
-    "object_repr": "5.45x39"
-  }
+    "user": 1
+  }, 
+  "model": "admin.logentry"
 },
 {
   "pk": 48, 
-  "model": "admin.logentry", 
   "fields": {
-    "user": 1, 
+    "object_repr": "Arisaka", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:08:18.203Z", 
     "object_id": "12", 
     "action_flag": 1, 
-    "action_time": "2014-03-21T15:08:18.203Z", 
     "content_type": 7, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 49, 
+  "fields": {
+    "object_repr": "Close-Quarters Combat", 
     "change_message": "", 
-    "object_repr": "Arisaka"
-  }
+    "action_time": "2014-03-21T15:33:15.400Z", 
+    "object_id": "1", 
+    "action_flag": 1, 
+    "content_type": 10, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 50, 
+  "fields": {
+    "object_repr": "300 AAC Blackout", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:33:29.596Z", 
+    "object_id": "1", 
+    "action_flag": 1, 
+    "content_type": 11, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 51, 
+  "fields": {
+    "object_repr": "Short Range", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:33:42.556Z", 
+    "object_id": "2", 
+    "action_flag": 1, 
+    "content_type": 10, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 52, 
+  "fields": {
+    "object_repr": "Medium Range", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:33:46.519Z", 
+    "object_id": "3", 
+    "action_flag": 1, 
+    "content_type": 10, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 53, 
+  "fields": {
+    "object_repr": "Long Range", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:33:50.769Z", 
+    "object_id": "4", 
+    "action_flag": 1, 
+    "content_type": 10, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 54, 
+  "fields": {
+    "object_repr": "Extremely Long Range", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:33:54.687Z", 
+    "object_id": "5", 
+    "action_flag": 1, 
+    "content_type": 10, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 55, 
+  "fields": {
+    "object_repr": ".308", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:35:29.356Z", 
+    "object_id": "32", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 56, 
+  "fields": {
+    "object_repr": ".308 Marlin Express", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:36:20.990Z", 
+    "object_id": "2", 
+    "action_flag": 1, 
+    "content_type": 11, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 57, 
+  "fields": {
+    "object_repr": ".45 GAP", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:37:14.062Z", 
+    "object_id": "3", 
+    "action_flag": 1, 
+    "content_type": 11, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 58, 
+  "fields": {
+    "object_repr": ".25", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:37:53.135Z", 
+    "object_id": "33", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 59, 
+  "fields": {
+    "object_repr": ".25 WSSM", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:38:08.208Z", 
+    "object_id": "4", 
+    "action_flag": 1, 
+    "content_type": 11, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 60, 
+  "fields": {
+    "object_repr": ".22 Winchester Rimfire", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:39:19.105Z", 
+    "object_id": "5", 
+    "action_flag": 1, 
+    "content_type": 11, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 61, 
+  "fields": {
+    "object_repr": ".221 Remington Fireball", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:40:51.284Z", 
+    "object_id": "6", 
+    "action_flag": 1, 
+    "content_type": 11, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 62, 
+  "fields": {
+    "object_repr": ".300", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:41:58.321Z", 
+    "object_id": "34", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 63, 
+  "fields": {
+    "object_repr": ".300 H&H Magnum", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:42:12.509Z", 
+    "object_id": "7", 
+    "action_flag": 1, 
+    "content_type": 11, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 64, 
+  "fields": {
+    "object_repr": "Winchester", 
+    "change_message": "Changed country.", 
+    "action_time": "2014-03-21T15:43:46.162Z", 
+    "object_id": "5", 
+    "action_flag": 2, 
+    "content_type": 7, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 65, 
+  "fields": {
+    "object_repr": ".303 British", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:44:22.880Z", 
+    "object_id": "8", 
+    "action_flag": 1, 
+    "content_type": 11, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 66, 
+  "fields": {
+    "object_repr": "5.56\u00d745mm NATO", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:46:52.754Z", 
+    "object_id": "9", 
+    "action_flag": 1, 
+    "content_type": 11, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 67, 
+  "fields": {
+    "object_repr": "7mm Winchester Short Magnum", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:48:14.733Z", 
+    "object_id": "10", 
+    "action_flag": 1, 
+    "content_type": 11, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 68, 
+  "fields": {
+    "object_repr": "5mm", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:49:02.716Z", 
+    "object_id": "35", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 69, 
+  "fields": {
+    "object_repr": "5 mm Remington Rimfire Magnum", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:49:15.787Z", 
+    "object_id": "11", 
+    "action_flag": 1, 
+    "content_type": 11, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 70, 
+  "fields": {
+    "object_repr": ".224", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:50:07.374Z", 
+    "object_id": "36", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 71, 
+  "fields": {
+    "object_repr": ".224 Boz", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:50:29.217Z", 
+    "object_id": "12", 
+    "action_flag": 1, 
+    "content_type": 11, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 72, 
+  "fields": {
+    "object_repr": ".35", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:51:58.310Z", 
+    "object_id": "37", 
+    "action_flag": 1, 
+    "content_type": 9, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 73, 
+  "fields": {
+    "object_repr": ".35 S&W Auto", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:52:16.988Z", 
+    "object_id": "13", 
+    "action_flag": 1, 
+    "content_type": 11, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 74, 
+  "fields": {
+    "object_repr": ".357 SIG", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:53:37.460Z", 
+    "object_id": "14", 
+    "action_flag": 1, 
+    "content_type": 11, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
+},
+{
+  "pk": 75, 
+  "fields": {
+    "object_repr": "9 mm Makarov", 
+    "change_message": "", 
+    "action_time": "2014-03-21T15:54:22.031Z", 
+    "object_id": "15", 
+    "action_flag": 1, 
+    "content_type": 11, 
+    "user": 1
+  }, 
+  "model": "admin.logentry"
 }
 ]
