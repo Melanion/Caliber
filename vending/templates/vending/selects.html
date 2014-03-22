@@ -1,25 +1,25 @@
-<script src="http://code.jquery.com/jquery-2.1.0.min.js" ></script>
 <script>
 $(function() {
-    $("#caliber_field").change( autoSubmit("caliberForm") );
-    $("#purpose_field").change( autoSubmit("purposeForm") );
-    $("#weapon_field").change( autoSubmit("weaponForm") );
-    $("#company_field").change( autoSubmit("companyForm") );
-
+    $( "#caliber" ).change( buildAjaxAutoSubmit("caliber") );
+    $( "#purpose" ).change( buildAjaxAutoSubmit("purpose") );
+    $( "#weapon" ).change( buildAjaxAutoSubmit("weapon") );
+    $( "#company" ).change( buildAjaxAutoSubmit("company") );
 });
-function autoSubmit(domId) {
+
+function buildAjaxAutoSubmit(domId) {
     //return function() {$("#" + domId).submit();};
     return function() {
         $.get("/", 
 
                // JSON variables to pass in the request
                {message : 'Hello, world, from AJAX!!!',
+                update  : domId,
                 action  : 'something'}, 
 
                 function(response) {
 
                     if ("success" == response['action']) {
-                        alert("WOOT");
+                        alert(response['message']);
                     } else {
                         alert("noooooo!!!");
                     }
@@ -29,25 +29,25 @@ function autoSubmit(domId) {
 }
 </script>
 
-<select id="caliber_field" name="caliber_field">
+<select id="caliber" name="caliber">
     {% for caliber in caliber_list %}
         <option value="{{ caliber.id }}">{{ caliber.name }}</option>
     {% endfor %}
 </select>
 
-<select id="purpose_field" name="purpose_field">
+<select id="purpose" name="purpose">
     {% for purpose in purpose_list %}
         <option value="{{ purpose.id }}">{{ purpose.description }}</option>
     {% endfor %}
 </select>
 
-<select id="company_field" name="company_field">
+<select id="company" name="company">
     {% for company in company_list %}
         <option value="{{ company.id }}">{{ company.name }}</option>
     {% endfor %}
 </select>
 
-<select id="weapon_field" name="weapon_field">
+<select id="weapon" name="weapon">
     {% for weapon in weapon_list %}
         <option value="{{ weapon.id }}">{{ weapon.name }}</option>
     {% endfor %}

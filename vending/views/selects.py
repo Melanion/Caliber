@@ -5,30 +5,37 @@ from django.template import RequestContext, loader
 from vending.models import Round, Caliber, Purpose, Weapon, Company
 
 def caliber_changed(request):
-    u''' Handles an event in the form of a caliber selection change.
+    u''' Handles an event in the form of a "caliber" selection change.
     '''
-    context = {'message': 'Caliber changed!',} 
-    return render(request, 'vending/testbed.html', context)
+    context = {'action' : 'success', 
+               'message': 'Caliber changed!',} 
+    return context;
 
 def purpose_changed(request):
-    u'''
+    u''' Handles an event in the form of a "purpose" selection change.
     '''
-    context = {'round_': round_list,} 
-    context = {'message': 'Purpose changed!',} 
-    return render(request, 'vending/testbed.html', context)
+    context = {'action' : 'success', 
+               'message': 'Purpose changed!',} 
+    return context;
+
+
 
 def company_changed(request):
-    u'''
+    u''' Handles an event in the form of a "company" selection change.
     '''
-    context = {'message': 'Company changed!',} 
-    return render(request, 'vending/testbed.html', context)
+    context = {'action' : 'success', 
+               'message': 'Company changed!',} 
+    return context;
+
 
 
 def weapon_changed(request):
-    u'''
+    u''' Handles an event in the form of a "weapon" selection change.
     '''
-    context = {'message': 'Weapon changed!',} 
-    return render(request, 'vending/testbed.html', context)
+    context = {'action' : 'success', 
+               'message': 'Weapon changed!',} 
+    return context;
+
 
 
 

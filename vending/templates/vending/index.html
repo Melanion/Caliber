@@ -1,33 +1,20 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
-    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+{% extends "vending/base.html" %}
 
-<html lang="en-US" xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml">
+{% block content %}
+     
+    {% include "vending/selects.html" %}
 
-<head>
-        <title>CS453 - Team Five: Caliber</title> 
-        <meta name="description" content=""/>
-        <meta name="keywords" content=""/>
-        <meta name="author" content="Drew Jaqua, Wes Johnson"/>
-        <meta http-equiv="Content-Type" content="text/html;charset=ISO-8859-1"/>
+    {% if round_list %}
+        <ul>
+            {% for round in round_list %}
+                <li><a href="/rounds/{{ round.id }}/">{{ round.name }}</a></li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>We're sorry, no rounds are available at this time.</p>
+    {% endif %}
 
-    </head>
-    
-    <body>
- 
-{% include "vending/selects.html" %}
-
-{% if round_list %}
-    <ul>
-        {% for round in round_list %}
-            <li><a href="/rounds/{{ round.id }}/">{{ round.name }}</a></li>
-        {% endfor %}
-    </ul>
-{% else %}
-    <p>We're sorry, no rounds are available at this time.</p>
-{% endif %}
-
-    </body>
-</html>
+{% endblock %}
 
 
 
