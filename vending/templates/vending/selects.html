@@ -9,7 +9,23 @@ $(function() {
 });
 function autoSubmit(domId) {
     //return function() {$("#" + domId).submit();};
-    return function() { alert( domId ); };
+    return function() {
+        $.get("/", 
+
+               // JSON variables to pass in the request
+               {message : 'Hello, world, from AJAX!!!',
+                action  : 'something'}, 
+
+                function(response) {
+
+                    if ("success" == response['action']) {
+                        alert("WOOT");
+                    } else {
+                        alert("noooooo!!!");
+                    }
+                
+            } ); // end jQuery POST      
+    };
 }
 </script>
 
