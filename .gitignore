@@ -7,5 +7,5 @@
 local_settings.py
 runserver
 shell
-syndb
-
+syncdb
+revert.sh
