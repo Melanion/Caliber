@@ -1,0 +1,39 @@
+Tables
+
+Rounds
+------
+id (primary key)
+name
+caliber_id (foreign key in Calibers)
+purpose_id (foreign key in Purposes)
+year
+company_id (foreign key in Companies)
+----------------------------------------
+
+Calibers
+--------
+id (primary key)
+name
+weapon_type_id (foreign key in Weapons)
+----------------------------------------
+
+Companies
+---------
+id (primary key)
+name
+country
+----------------------------------------
+
+Weapons
+-------
+id (primary key)
+name
+type
+company_id (foreign key in Companies)
+----------------------------------------
+
+Purposes
+--------
+id (primary key)
+description
+round_id (foreign key in Rounds)

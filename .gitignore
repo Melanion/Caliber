@@ -1,6 +1,11 @@
+
 *.last
 *.swp
 *.log
 *.pot
 *.pyc
 local_settings.py
+runserver
+shell
+syndb
+
