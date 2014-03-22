@@ -1,19 +1,17 @@
 <script src="http://code.jquery.com/jquery-2.1.0.min.js" ></script>
 <script>
 $(function() {
-    $("#caliber_field").change( autoSubmit );
-    $("#purpose_field").change( autoSubmit );
-    $("#weapon_field").change( autoSubmit );
-    $("#company_field").change( autoSubmit );
-
+    $("#caliber_field").change( autoSubmit("caliberForm") );
+    $("#purpose_field").change( autoSubmit("purposeForm") );
+    $("#weapon_field").change( autoSubmit("weaponForm") );
+    $("#company_field").change( autoSubmit("companyForm") );
 
 });
-function autoSubmit() {
-    $("#queryForm").submit();
+function autoSubmit(domId) {
+    //return function() {$("#" + domId).submit();};
+    return function() { alert( domId ); };
 }
 </script>
-<form action="." id="queryForm">
-
 
 <select id="caliber_field" name="caliber_field">
     {% for caliber in caliber_list %}
@@ -21,13 +19,11 @@ function autoSubmit() {
     {% endfor %}
 </select>
 
-
 <select id="purpose_field" name="purpose_field">
     {% for purpose in purpose_list %}
         <option value="{{ purpose.id }}">{{ purpose.description }}</option>
     {% endfor %}
 </select>
-
 
 <select id="company_field" name="company_field">
     {% for company in company_list %}
@@ -35,10 +31,8 @@ function autoSubmit() {
     {% endfor %}
 </select>
 
-
 <select id="weapon_field" name="weapon_field">
     {% for weapon in weapon_list %}
         <option value="{{ weapon.id }}">{{ weapon.name }}</option>
     {% endfor %}
 </select>
-</form>

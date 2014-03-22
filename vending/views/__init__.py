@@ -13,6 +13,10 @@ def index(request):
     weapon_list = Weapon.objects.all()
     caliber_list = Caliber.objects.all()
     round_list = Round.objects.all()
+
+    
+
+
     context = {'round_list': round_list,
                'caliber_list':caliber_list,
                'purpose_list': purpose_list,
@@ -20,6 +24,23 @@ def index(request):
                'company_list':company_list,}
     return render(request, 'vending/index.html', context)
 
+
 def detail(request, round_id):
     round = get_object_or_404(Round, pk=round_id)
     return render(request, 'vending/detail.html', {'round': round})
+
+
+
+
+def caliber_changed(request):
+    pass
+
+def purpose_changed(request):
+    pass
+
+def company_changed(request):
+    pass
+
+def weapon_changed(request):
+    pass
+
