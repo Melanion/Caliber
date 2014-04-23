@@ -1,0 +1,20 @@
+{% extends "vending/base.html" %}
+
+{% block content %} 
+ 
+    {% comment %}
+       Display details about this particular round, including 
+       links to the manufactures website, location, and primary phone
+    {% endcomment %}
+
+   <ul>
+     <a href="/manufacturer/{{ round.manufacturer }}/">{{ round.manufacturer }}</a> - {{ round.description }} - ${{ round.cost }}
+     <li>{{ round.caliber }}</li>
+     <li>{{ round.bullet }}</li>
+     <li>{{ round.material }}</li>
+     <li>{{ round.rimfire }}</li>
+     <li>{{ round.inventory_count }}</li>
+   </ul>
+
+
+{% endblock %}

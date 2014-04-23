@@ -3,7 +3,7 @@ Round
 id
 cost
 inventory_count
-mfgr (foreign key in Manufacturer)
+manufacturer (foreign key in Manufacturer)
 cartridge (foreign key in Cartridge)
 
 
@@ -21,7 +21,6 @@ rimfire #true/false
 caliber (foreign key in Caliber)
 material (foreign key in Material)
 bullet (foreign key in Bullet)
-propellant (foreign key in Propellant)
 
 
 Caliber
