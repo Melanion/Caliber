@@ -1,0 +1,88 @@
+Authors: Drew Jaqua & Wes Johnson 
+Date: 02/24/2014
+
+Feature: Usage Stipulation and Agreement
+
+	Scenario: Accepting the Agreement
+	GIVEN the machine is powered on and the usage agreement is displayed
+	WHEN I choose to accept the usage agreement
+	THEN the agreement is hidden and I can proceed to the "Viewing Ammunition"
+		feature.
+	
+	Scenario: Decline the Agreement
+	GIVEN the machine is powered on and the usage agreement is displayed 
+	WHEN I choose to decline the usage agreement
+	THEN the agreement is hidden and a message indicating that I ~MUST~ agree
+		to use the machine under the aformentioned terms is presented for 
+		10 seconds, and then the usage agreement is presented again.
+
+Feature: Viewing Ammunition
+	All a firearms enthusiast, I want to be able to view all ammunition
+	dispensed by this machine.
+ 
+	Scenario: Viewing General Ammunition
+		GIVEN that the machine is powered on
+		WHEN I look at the machine's screen,
+		THEN the app displays ammunition dispensed by this machine.
+   
+	Scenario: Viewing Out-of-Stock Ammunition
+		GIVEN that the machine is powered on
+		WHEN I view ammunition which is out of stock
+		THEN the app visually indicates that the ammunition is out of stock
+
+	Scenario: Viewing In-Stock Ammunition	
+		GIVEN that the machine is powered on 
+		WHEN I view ammunition which is in stock
+		THEN the app visually indicates that the ammunition is in stock
+
+Feature: Purchasing Ammunition
+	As a firearms enthusiast with some extra cash, I want to be able to 
+	purchase ammunition dispensed by this machine.	
+
+	Scenario: Purchasing In-Stock Ammunition
+		GIVEN the machine is powered on
+		WHEN I choose to purchase ammunition that is currently in-stock
+		THEN I am prompted to present identification to verify my age.
+
+	Scenario: Purchasing Out-of-Stock Ammunition
+		GIVEN the machine is powered on
+		WHEN I choose to purchase ammunition which is current out of stock
+		THEN the app visually offers an apology 
+
+	Scenario: Purchasing Ammunition with Authorization
+		GIVEN the machine is powered on and the ammunition I have chosen is 
+			in stock
+		WHEN I am prompted to present identification to verify my age
+		THEN the app determines that I am 18 or older and proceeds to 
+			"Dispensing Ammunition" feature.
+ 
+	Scenario: Purchasing Ammunition without Authorization
+		GIVEN the machine is powered on and the ammunition I have chosen is 
+			in stock
+		WHEN I am prompted to present identification
+		THEN the app determines that I am under 18 and visually presents 
+			an explaination of the laws and an apology.
+
+Feature: Dispensing Ammunition
+	As a firearms enthusiast, I want to be able to pay for ammunition I have
+	chosen to purchase.
+
+	Scenario: Dispense ammunition to authorized user with sufficient funds
+		GIVEN the machine is on, the ammunition I have chosen is in stock,
+			and I have been authorized
+		WHEN I provide a sufficient amount of money to the machine
+		THEN the app allows the machine to dispense the ammunition.
+
+	Scenario: Dispense ammunition to authorized user with insufficient funds
+		GIVEN the machine is on, the ammunition I have chosen is in stock,
+			and I have been authorized
+		WHEN I provide an INSUFFICIENT amount of money to the machine
+		THEN the app visually displays an apology and prompts me to either
+			try another payment method or cancel the transaction.
+
+	Scenario: Cancel transaction
+		GIVEN the machine is on and I am being prompted for payment
+		WHEN I choose to cancel the transaction
+		THEN a message is displayed thanking me for the business but an
+			apology for not closing the deal.
+
