@@ -39,3 +39,36 @@ def detail(request, round_id):
     return render(request, 'vending/detail.html', {'round': round})
 
 
+
+def round_details(request, round_id):
+    round = get_object_or_404(Round, pk=round_id)
+    return render(request, 'vending/round_details.html', {'round': round})
+
+
+
+def cartridge_details(request, cartridge_id):
+    cartridge = get_object_or_404(Cartridge, pk=round_id)
+    return render(request, 'vending/cartridge_details.html', {'round': cartridge})
+
+
+
+def manufacturer_details(request, mfgr_id):
+    #manufacturer = get_object_or_404(Manufacturer, pk=mfgr_id)
+
+    manufacturer = {
+        'id':1,
+        'name':'kick ass enterprises',
+        'website':'http://www.google.com',
+        'phone':'800.123.4567'
+    }
+    return render( request, 
+                   'vending/manufacturer_details.html', 
+                   {'manufacturer':manufacturer})
+
+
+
+def about(request, round_id):
+    return render(request, 'vending/about.html')
+
+
+

@@ -12,7 +12,8 @@ Manufacturer
 ==============
 id
 name            # Remington, Federal, etc
-
+website 
+phone
 
 Cartridge 
 ==============
