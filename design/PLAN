@@ -10,7 +10,7 @@ $$       ** "inventory_count" attribute helps satisfy project 2 requirement 1
 
 $$            1) schema implementations (BDD etc)
 
-            2) fixtures
+$$            2) fixtures
              
             3) diagrams (import from http://draw.io) (perhaps wait until presentation)
 
@@ -27,7 +27,7 @@ $$            e. Buller
 $$            f. Material
 
 
-        2) AJAX Query processing and strategy selection (JSON -> Python)
+$$        2) AJAX Query processing and strategy selection (JSON -> Python)
 
         3) strategy implementation (Python -> SQL)
 

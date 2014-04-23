@@ -5,25 +5,15 @@ Multiple selects -- one for each attribute of Round
   
   -- use queries as strategies:
      
-     * Company, Purpose, Caliber XOR Weapon, 
+     * Manufacturer, Bullet, Caliber, Material, 
      
-     * Company & Purpose, Company & (Caliber XOR Weapon), 
-       Purpose & (Caliber XOR Weapon), 
+     * Manufacturer & Bullet, Manufacturer & Caliber, Manufacturer & Material, 
+       Bullet & Caliber, Bullet & Material, Caliber & Material
 
-     * Company & Purpose & (Caliber XOR Weapon),
+     * Manufacturer & Bullet & Caliber, Manufacturer & Bullet & Material,
+       Bullet & Material & Caliber
 
-  -- XORs use all those fun joins and stuff, cause you have to go through an
-     intermediate table (Caliber in an example where the user selects by purpose)
      
-  -- when a select is changed, the UI is updated instantly.
   
-  -- adding "cost" attribute to Round would provide us with more strategies
-     and particularly more joins:
-
-     * Cost
-     
-     * Cost & Company, Cost & Purpose, Cost & (Caliber XOR Weapon) 
-     
-     * Company & Purpose & Cost & (Caliber XOR Weapon)
 
 
