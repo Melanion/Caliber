@@ -9,3 +9,4 @@ runserver
 shell
 syncdb
 revert.sh
+*.idea*
