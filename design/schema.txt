@@ -1,39 +1,42 @@
-Tables
+Round
+==============
+id
+cost
+inventory_count
+mfgr (foreign key in Manufacturer)
+cartridge (foreign key in Cartridge)
 
-Rounds
-------
-id (primary key)
-name
-caliber_id (foreign key in Calibers)
-purpose_id (foreign key in Purposes)
-year
-company_id (foreign key in Companies)
-----------------------------------------
 
-Calibers
---------
-id (primary key)
-name
-weapon_type_id (foreign key in Weapons)
-----------------------------------------
 
-Companies
----------
-id (primary key)
-name
-country
-----------------------------------------
+Manufacturer
+==============
+id
+name            # Remington, Federal, etc
 
-Weapons
--------
-id (primary key)
-name
-type
-company_id (foreign key in Companies)
-----------------------------------------
 
-Purposes
---------
-id (primary key)
-description
-round_id (foreign key in Rounds)
+Cartridge 
+==============
+id
+rimfire #true/false
+caliber (foreign key in Caliber)
+material (foreign key in Material)
+bullet (foreign key in Bullet)
+propellant (foreign key in Propellant)
+
+
+Caliber
+==============
+id
+description     # 0.22 cal, 9mm, 12ga etc
+
+Material
+==============
+id
+name            # Steel, Aluminum, Brass, Plastic
+
+Bullet
+==============
+id
+purpose         # jacketed, incendiary, armor-piercing, jacketed, etc
+
+
