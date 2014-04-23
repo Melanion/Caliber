@@ -1,0 +1,85 @@
+(in order of priority)
+
+I -- Database design adjustments 
+    
+    A. Append "cost" and "inventory_count" attributes to Round 
+
+        ** "inventory_count" attribute helps satisfy project 2 requirement 1
+
+        1) Update Artifacts
+
+            1) schema implementations (BDD etc)
+
+            2) fixtures
+             
+            3) diagrams (import from http://draw.io)
+
+II -- Query Strategy implementation (satisfies project 2 requirement 3)
+
+    A. Django/Server-side
+
+        1) Object-Relational-Mapper implementation
+            a. Round
+            b. Purpose
+            c. Company
+            d. Caliber
+            e. Round
+
+        2) AJAX Query processing and strategy selection (JSON -> Python)
+
+        3) strategy implementation (Python -> SQL)
+
+        4) SQL statements project 2 requirement 3 part 2 
+        
+
+    B. AJAX/Client-side
+
+        1) factor in Weapon XOR Caliber dilemma 
+
+        2) DEFAULT query ?weapon=any&purpose=any&company=any&cost=any
+
+        3) BASIC query 
+            ?caliber=45&purpose=any&company=any&cost=any
+            ?weapon=rifle&purpose=any&company=any&cost=any
+            
+        4) NEVER (except if by some miracle we're ahead of schedule and bored)
+            ?caliber=any&...
+            ?caliber=45&purpose=
+
+            a. use jQuery magic to enforce
+
+    B. User interface modification 
+
+        1) Add selects for new fields and criteria
+
+            a. Satisfy project 2 requirement 1     
+    
+                1) Accepting/Declining Agreement
+
+                2) Viewing General Ammunition
+                    
+                3) Viewing in-stock/sold-out ammunition
+                
+                4) Purchasing in-stock/sold-out ammunition
+
+                5) Authorized/Unauthorized Purchase of ammunition
+
+                6) Dispense to patriot with sufficient/insufficient funds
+                
+                7) Cancel transaction
+
+
+    C. The Battle of Heroku            
+
+    D. The Presentation
+
+        1. Introduction/Abstract (5 minutes)
+            a. project description
+            b. design phase 
+            c. 
+        2. Implementation (10 minutes)
+            a. ORM to SQL (5 minutes)
+            b. source code review (5 minutes)
+
+
+
