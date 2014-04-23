@@ -12,29 +12,29 @@ def caliber_changed(request):
                'message': 'Caliber changed!',} 
     return context;
 
-def purpose_changed(request):
+def bullet_changed(request):
     u''' Handles an event in the form of a "purpose" selection change.
     '''
     context = {'action' : 'success', 
-               'message': 'Purpose changed!',} 
+               'message': 'Bullet changed!',} 
     return context;
 
 
 
-def company_changed(request):
+def manufacturer_changed(request):
     u''' Handles an event in the form of a "company" selection change.
     '''
     context = {'action' : 'success', 
-               'message': 'Company changed!',} 
+               'message': 'Manufacturer changed!',} 
     return context;
 
 
 
-def weapon_changed(request):
+def material_changed(request):
     u''' Handles an event in the form of a "weapon" selection change.
     '''
     context = {'action' : 'success', 
-               'message': 'Weapon changed!',} 
+               'message': 'Material changed!',} 
     return context;
 
 
