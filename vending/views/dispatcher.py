@@ -3,8 +3,7 @@ from django.http import HttpResponse
 from django.template import RequestContext, loader
 from django.http import Http404
 
-from vending.models import Round, Caliber, Purpose, Weapon, Company
-
+from vending.models import Round, Manufacturer, Cartridge, Material, Caliber, Bullet
 from vending.views import ajax
 
 
@@ -14,9 +13,9 @@ def index(request):
          "vending/index.html" to appropriate request handlers.
     '''
 
-    company_list = Company.objects.all()
-    purpose_list = Purpose.objects.all()
-    weapon_list = Weapon.objects.all()
+    manufacturer_list = Manufacturer.objects.all()
+    material_list = Material.objects.all()
+    bullet_list = Bullet.objects.all()
     caliber_list = Caliber.objects.all()
     round_list = Round.objects.all()
 
@@ -27,10 +26,11 @@ def index(request):
 
 
     context = {'round_list': round_list,
-               'caliber_list':caliber_list,
-               'purpose_list': purpose_list,
-               'weapon_list':weapon_list,
-               'company_list':company_list,}
+               'caliber_list': caliber_list,
+               'material_list': material_list,
+               'bullet_list': bullet_list,
+               'manufacturer_list': manufacturer_list,}
+    
     return render(request, 'vending/index.html', context)
 
 
@@ -67,7 +67,7 @@ def manufacturer_details(request, mfgr_id):
 
 
 
-def about(request, round_id):
+def about(request):
     return render(request, 'vending/about.html')
 
 

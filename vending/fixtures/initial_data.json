@@ -56,45 +56,54 @@
 {
   "pk": 7, 
   "fields": {
-    "app_label": "vending", 
-    "model": "company", 
-    "name": "company"
+    "app_label": "manufacturer", 
+    "model": "manufacturer", 
+    "name": "manufacturer"
   }, 
   "model": "contenttypes.contenttype"
 },
 {
   "pk": 8, 
   "fields": {
-    "app_label": "vending", 
-    "model": "weapon", 
-    "name": "weapon"
-  }, 
-  "model": "contenttypes.contenttype"
-},
-{
-  "pk": 9, 
-  "fields": {
-    "app_label": "vending", 
+    "app_label": "caliber", 
     "model": "caliber", 
     "name": "caliber"
   }, 
   "model": "contenttypes.contenttype"
 },
 {
+  "pk": 9, 
+  "fields": {
+    "app_label": "bullet", 
+    "model": "bullet", 
+    "name": "bullet"
+  }, 
+  "model": "contenttypes.contenttype"
+},
+{
   "pk": 10, 
   "fields": {
-    "app_label": "vending", 
-    "model": "purpose", 
-    "name": "purpose"
+    "app_label": "material", 
+    "model": "material", 
+    "name": "material"
   }, 
   "model": "contenttypes.contenttype"
 },
 {
   "pk": 11, 
   "fields": {
-    "app_label": "vending", 
+    "app_label": "round", 
     "model": "round", 
     "name": "round"
+  }, 
+  "model": "contenttypes.contenttype"
+},
+{
+  "pk": 12, 
+  "fields": {
+    "app_label": "cartridge", 
+    "model": "cartridge", 
+    "name": "cartridge"
   }, 
   "model": "contenttypes.contenttype"
 },
@@ -113,603 +122,342 @@
     "expire_date": "2014-04-04T16:03:17.599Z"
   }, 
   "model": "sessions.session"
-},
+},  
 {
   "pk": 1, 
   "fields": {
-    "country": "United States", 
-    "name": "Advanced Armament Corp"
+    "name": "Steel"
   }, 
-  "model": "vending.company"
+  "model": "vending.material"
 },
 {
   "pk": 2, 
   "fields": {
-    "country": "United States", 
-    "name": "Ruger"
+    "name": "Brass"
   }, 
-  "model": "vending.company"
+  "model": "vending.material"
 },
 {
   "pk": 3, 
   "fields": {
-    "country": "United States", 
-    "name": "Remington"
+    "name": "Aluminum"
   }, 
-  "model": "vending.company"
+  "model": "vending.material"
 },
 {
   "pk": 4, 
   "fields": {
-    "country": "United States", 
-    "name": "Smith & Wesson"
+    "name": "Plastic"
   }, 
-  "model": "vending.company"
+  "model": "vending.material"
 },
+
 {
   "pk": 5, 
   "fields": {
-    "country": "United States", 
-    "name": "Winchester"
+    "phone":"770.925.9988",
+    "website": "http://www.advanced-armament.com/", 
+    "name": "Advanced Armament Corp"
   }, 
-  "model": "vending.company"
+  "model": "vending.manufacturer"
 },
 {
   "pk": 6, 
   "fields": {
-    "country": "United Kingdom", 
-    "name": "Holland & Holland"
+    "phone": "603.865.2442", 
+    "website": "http://www.ruger.com", 
+    "name": "Sturm, Ruger, & Co., Inc."
   }, 
-  "model": "vending.company"
+  "model": "vending.manufacturer"
 },
 {
   "pk": 7, 
   "fields": {
-    "country": "Austria", 
-    "name": "Speer"
+    "phone": "800.243.9700", 
+    "website": "http://www.remington.com", 
+    "name": "Remington"
   }, 
-  "model": "vending.company"
+  "model": "vending.manufacturer"
 },
 {
   "pk": 8, 
   "fields": {
-    "country": "Germany", 
+    "phone": "800.331.0852", 
+    "website": "http://www.smith-wesson.com", 
+    "name": "Smith & Wesson"
+  }, 
+  "model": "vending.manufacturer"
+},
+{
+  "pk": 5, 
+  "fields": {
+    "phone": "800.123.4567", 
+    "website": "http://www.winchester.com", 
+    "name": "Winchester"
+  }, 
+  "model": "vending.manufacturer"
+},
+{
+  "pk": 6, 
+  "fields": {
+    "phone": "+44 (0) 20 7499 4411", 
+    "website": "http://www.hollandandholland.com", 
+    "name": "Holland & Holland"
+  }, 
+  "model": "vending.manufacturer"
+},
+{
+  "pk": 7, 
+  "fields": {
+    "phone": "800.379.1732", 
+    "website": "http://www.speer-ammo.com", 
+    "name": "Speer"
+  }, 
+  "model": "vending.manufacturer"
+},
+{
+  "pk": 8, 
+  "fields": {
+    "phone": "603.610.3000", 
+    "website": "http://www.sigsauer.com", 
     "name": "SIG Sauer"
   }, 
-  "model": "vending.company"
+  "model": "vending.manufacturer"
 },
 {
   "pk": 9, 
   "fields": {
-    "country": "Austria", 
+    "phone": "", 
+    "website": "http://www.glock.com", 
     "name": "Glock"
   }, 
-  "model": "vending.company"
+  "model": "vending.manufacturer"
 },
 {
   "pk": 10, 
   "fields": {
-    "country": "Sweden", 
+    "phone": "", 
+    "website": "http://www.norma.cc/en/", 
     "name": "FFV Norma AB"
   }, 
-  "model": "vending.company"
-},
-{
-  "pk": 11, 
-  "fields": {
-    "country": "USSR", 
-    "name": "USSR"
-  }, 
-  "model": "vending.company"
-},
-{
-  "pk": 12, 
-  "fields": {
-    "country": "Japan", 
-    "name": "Arisaka"
-  }, 
-  "model": "vending.company"
+  "model": "vending.manufacturer"
 },
 {
   "pk": 1, 
   "fields": {
-    "name": "Rifle"
+    "purpose": "Incendiary"
   }, 
-  "model": "vending.weapon"
+  "model": "vending.bullet"
 },
 {
   "pk": 2, 
   "fields": {
-    "name": "Handgun"
+    "purpose": "Exploding"
   }, 
-  "model": "vending.weapon"
+  "model": "vending.bullet"
 },
 {
   "pk": 3, 
   "fields": {
-    "name": "Submachine Gun"
+    "purpose": "Lead"
   }, 
-  "model": "vending.weapon"
+  "model": "vending.bullet"
+},
+{
+  "pk": 4, 
+  "fields": {
+    "purpose": "Jacketed lead"
+  }, 
+  "model": "vending.bullet"
+},
+{
+  "pk": 5, 
+  "fields": {
+    "purpose": "Blanks"
+  }, 
+  "model": "vending.bullet"
+},
+{
+  "pk": 6, 
+  "fields": {
+    "purpose": "Practice"
+  }, 
+  "model": "vending.bullet"
+},
+{
+  "pk": 7, 
+  "fields": {
+    "purpose": "Less Lethal"
+  }, 
+  "model": "vending.bullet"
+},
+{
+  "pk": 8, 
+  "fields": {
+    "purpose": "Tracer"
+  }, 
+  "model": "vending.bullet"
+},
+{
+  "pk": 9, 
+  "fields": {
+    "purpose": "Armor Piercing"
+  }, 
+  "model": "vending.bullet"
 },
 {
   "pk": 2, 
   "fields": {
-    "weapon_type": 1, 
-    "name": ".297"
+    "description": ".297"
   }, 
   "model": "vending.caliber"
 },
 {
   "pk": 3, 
   "fields": {
-    "weapon_type": 1, 
-    "name": ".22"
+    "description": ".22 cal"
   }, 
   "model": "vending.caliber"
 },
 {
   "pk": 5, 
   "fields": {
-    "weapon_type": 1, 
-    "name": ".303"
+    "description": ".303"
   }, 
   "model": "vending.caliber"
 },
 {
   "pk": 6, 
   "fields": {
-    "weapon_type": 1, 
-    "name": ".30"
+    "description": ".30 cal"
   }, 
   "model": "vending.caliber"
 },
 {
   "pk": 7, 
   "fields": {
-    "weapon_type": 1, 
-    "name": ".17"
+    "description": ".17"
   }, 
   "model": "vending.caliber"
 },
 {
   "pk": 8, 
   "fields": {
-    "weapon_type": 1, 
-    "name": "4.6x30"
+    "description": "4.6x30"
   }, 
   "model": "vending.caliber"
 },
 {
   "pk": 9, 
   "fields": {
-    "weapon_type": 1, 
-    "name": "5.7x28"
+    "description": "5.7x28"
   }, 
   "model": "vending.caliber"
 },
 {
   "pk": 10, 
   "fields": {
-    "weapon_type": 1, 
-    "name": ".221"
+    "description": ".221"
   }, 
   "model": "vending.caliber"
 },
 {
   "pk": 11, 
   "fields": {
-    "weapon_type": 1, 
-    "name": "7.92x33"
+    "description": "7.92x33"
   }, 
   "model": "vending.caliber"
 },
 {
   "pk": 12, 
   "fields": {
-    "weapon_type": 1, 
-    "name": "5.6x39"
+    "description": "5.6x39"
   }, 
   "model": "vending.caliber"
 },
 {
   "pk": 13, 
   "fields": {
-    "weapon_type": 1, 
-    "name": "4.6x36"
+    "description": "4.6x36"
   }, 
   "model": "vending.caliber"
 },
 {
   "pk": 14, 
   "fields": {
-    "weapon_type": 1, 
-    "name": "7.62x39"
+    "description": "7.62x39"
   }, 
   "model": "vending.caliber"
 },
 {
   "pk": 15, 
   "fields": {
-    "weapon_type": 1, 
-    "name": ".223"
+    "description": ".223"
   }, 
   "model": "vending.caliber"
 },
 {
   "pk": 16, 
   "fields": {
-    "weapon_type": 1, 
-    "name": "5.56x45"
+    "description": "5.56x45"
   }, 
   "model": "vending.caliber"
 },
 {
   "pk": 17, 
   "fields": {
-    "weapon_type": 1, 
-    "name": ".30-30"
+    "description": ".30-30"
   }, 
   "model": "vending.caliber"
 },
 {
   "pk": 18, 
   "fields": {
-    "weapon_type": 1, 
-    "name": ".450"
+    "description": ".450"
   }, 
   "model": "vending.caliber"
 },
 {
   "pk": 19, 
   "fields": {
-    "weapon_type": 1, 
-    "name": "9mm"
+    "description": "9mm"
   }, 
   "model": "vending.caliber"
 },
 {
   "pk": 20, 
   "fields": {
-    "weapon_type": 1, 
-    "name": "7mm"
+    "description": "7mm"
   }, 
   "model": "vending.caliber"
 },
 {
   "pk": 21, 
   "fields": {
-    "weapon_type": 1, 
-    "name": ".30-06"
+    "description": ".30-06"
   }, 
   "model": "vending.caliber"
 },
 {
   "pk": 22, 
   "fields": {
-    "weapon_type": 2, 
-    "name": ".357"
+    "description": ".357"
   }, 
   "model": "vending.caliber"
 },
 {
   "pk": 23, 
   "fields": {
-    "weapon_type": 2, 
-    "name": ".38"
+    "description": ".38"
   }, 
   "model": "vending.caliber"
 },
 {
   "pk": 24, 
   "fields": {
-    "weapon_type": 2, 
-    "name": ".45"
+    "description": ".45"
   }, 
   "model": "vending.caliber"
-},
-{
-  "pk": 25, 
-  "fields": {
-    "weapon_type": 2, 
-    "name": "7.62x25"
-  }, 
-  "model": "vending.caliber"
-},
-{
-  "pk": 26, 
-  "fields": {
-    "weapon_type": 2, 
-    "name": "9x19"
-  }, 
-  "model": "vending.caliber"
-},
-{
-  "pk": 27, 
-  "fields": {
-    "weapon_type": 2, 
-    "name": ".44"
-  }, 
-  "model": "vending.caliber"
-},
-{
-  "pk": 28, 
-  "fields": {
-    "weapon_type": 2, 
-    "name": ".38"
-  }, 
-  "model": "vending.caliber"
-},
-{
-  "pk": 29, 
-  "fields": {
-    "weapon_type": 2, 
-    "name": ".224"
-  }, 
-  "model": "vending.caliber"
-},
-{
-  "pk": 30, 
-  "fields": {
-    "weapon_type": 2, 
-    "name": "5.7x28"
-  }, 
-  "model": "vending.caliber"
-},
-{
-  "pk": 31, 
-  "fields": {
-    "weapon_type": 1, 
-    "name": "5.45x39"
-  }, 
-  "model": "vending.caliber"
-},
-{
-  "pk": 32, 
-  "fields": {
-    "weapon_type": 1, 
-    "name": ".308"
-  }, 
-  "model": "vending.caliber"
-},
-{
-  "pk": 33, 
-  "fields": {
-    "weapon_type": 2, 
-    "name": ".25"
-  }, 
-  "model": "vending.caliber"
-},
-{
-  "pk": 34, 
-  "fields": {
-    "weapon_type": 1, 
-    "name": ".300"
-  }, 
-  "model": "vending.caliber"
-},
-{
-  "pk": 35, 
-  "fields": {
-    "weapon_type": 2, 
-    "name": "5mm"
-  }, 
-  "model": "vending.caliber"
-},
-{
-  "pk": 36, 
-  "fields": {
-    "weapon_type": 2, 
-    "name": ".224"
-  }, 
-  "model": "vending.caliber"
-},
-{
-  "pk": 37, 
-  "fields": {
-    "weapon_type": 2, 
-    "name": ".35"
-  }, 
-  "model": "vending.caliber"
-},
-{
-  "pk": 1, 
-  "fields": {
-    "description": "Close-Quarters Combat"
-  }, 
-  "model": "vending.purpose"
-},
-{
-  "pk": 2, 
-  "fields": {
-    "description": "Short Range"
-  }, 
-  "model": "vending.purpose"
-},
-{
-  "pk": 3, 
-  "fields": {
-    "description": "Medium Range"
-  }, 
-  "model": "vending.purpose"
-},
-{
-  "pk": 4, 
-  "fields": {
-    "description": "Long Range"
-  }, 
-  "model": "vending.purpose"
-},
-{
-  "pk": 5, 
-  "fields": {
-    "description": "Extremely Long Range"
-  }, 
-  "model": "vending.purpose"
-},
-{
-  "pk": 1, 
-  "fields": {
-    "purpose": 1, 
-    "caliber": 14, 
-    "manufacturer": 1, 
-    "year": 2011, 
-    "name": "300 AAC Blackout"
-  }, 
-  "model": "vending.round"
-},
-{
-  "pk": 2, 
-  "fields": {
-    "purpose": 4, 
-    "caliber": 32, 
-    "manufacturer": 3, 
-    "year": 2006, 
-    "name": ".308 Marlin Express"
-  }, 
-  "model": "vending.round"
-},
-{
-  "pk": 3, 
-  "fields": {
-    "purpose": 2, 
-    "caliber": 24, 
-    "manufacturer": 9, 
-    "year": 2003, 
-    "name": ".45 GAP"
-  }, 
-  "model": "vending.round"
-},
-{
-  "pk": 4, 
-  "fields": {
-    "purpose": 2, 
-    "caliber": 33, 
-    "manufacturer": 4, 
-    "year": 2004, 
-    "name": ".25 WSSM"
-  }, 
-  "model": "vending.round"
-},
-{
-  "pk": 5, 
-  "fields": {
-    "purpose": 3, 
-    "caliber": 3, 
-    "manufacturer": 5, 
-    "year": 1890, 
-    "name": ".22 Winchester Rimfire"
-  }, 
-  "model": "vending.round"
-},
-{
-  "pk": 6, 
-  "fields": {
-    "purpose": 4, 
-    "caliber": 10, 
-    "manufacturer": 3, 
-    "year": 1963, 
-    "name": ".221 Remington Fireball"
-  }, 
-  "model": "vending.round"
-},
-{
-  "pk": 7, 
-  "fields": {
-    "purpose": 4, 
-    "caliber": 34, 
-    "manufacturer": 6, 
-    "year": 1925, 
-    "name": ".300 H&H Magnum"
-  }, 
-  "model": "vending.round"
-},
-{
-  "pk": 8, 
-  "fields": {
-    "purpose": 3, 
-    "caliber": 5, 
-    "manufacturer": 6, 
-    "year": 1945, 
-    "name": ".303 British"
-  }, 
-  "model": "vending.round"
-},
-{
-  "pk": 9, 
-  "fields": {
-    "purpose": 4, 
-    "caliber": 16, 
-    "manufacturer": 3, 
-    "year": 1962, 
-    "name": "5.56\u00d745mm NATO"
-  }, 
-  "model": "vending.round"
-},
-{
-  "pk": 10, 
-  "fields": {
-    "purpose": 3, 
-    "caliber": 20, 
-    "manufacturer": 5, 
-    "year": 2001, 
-    "name": "7mm Winchester Short Magnum"
-  }, 
-  "model": "vending.round"
-},
-{
-  "pk": 11, 
-  "fields": {
-    "purpose": 2, 
-    "caliber": 35, 
-    "manufacturer": 3, 
-    "year": 1969, 
-    "name": "5 mm Remington Rimfire Magnum"
-  }, 
-  "model": "vending.round"
-},
-{
-  "pk": 12, 
-  "fields": {
-    "purpose": 2, 
-    "caliber": 36, 
-    "manufacturer": 9, 
-    "year": 1991, 
-    "name": ".224 Boz"
-  }, 
-  "model": "vending.round"
-},
-{
-  "pk": 13, 
-  "fields": {
-    "purpose": 1, 
-    "caliber": 37, 
-    "manufacturer": 4, 
-    "year": 1912, 
-    "name": ".35 S&W Auto"
-  }, 
-  "model": "vending.round"
-},
-{
-  "pk": 14, 
-  "fields": {
-    "purpose": 2, 
-    "caliber": 22, 
-    "manufacturer": 8, 
-    "year": 1994, 
-    "name": ".357 SIG"
-  }, 
-  "model": "vending.round"
-},
-{
-  "pk": 15, 
-  "fields": {
-    "purpose": 2, 
-    "caliber": 19, 
-    "manufacturer": 11, 
-    "year": 1946, 
-    "name": "9 mm Makarov"
-  }, 
-  "model": "vending.round"
 },
 {
   "pk": 1, 

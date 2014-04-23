@@ -1,9 +1,10 @@
 <script>
 $(function() {
     $( "#caliber" ).change( buildAjaxAutoSubmit("caliber") );
-    $( "#purpose" ).change( buildAjaxAutoSubmit("purpose") );
-    $( "#weapon" ).change( buildAjaxAutoSubmit("weapon") );
-    $( "#company" ).change( buildAjaxAutoSubmit("company") );
+    $( "#bullet" ).change( buildAjaxAutoSubmit("bullet") );
+    $( "#material" ).change( buildAjaxAutoSubmit("material") );
+//    $( "#cost" ).change( buildAjaxAutoSubmit("cost") );
+    $( "#manufacturer" ).change( buildAjaxAutoSubmit("manufacturer") );
 });
 
 function buildAjaxAutoSubmit(domId) {
@@ -30,25 +31,30 @@ function buildAjaxAutoSubmit(domId) {
 </script>
 
 <select id="caliber" name="caliber">
+    <option value="default">--any--</option>
     {% for caliber in caliber_list %}
-        <option value="{{ caliber.id }}">{{ caliber.name }}</option>
+        <option value="{{ caliber.id }}">{{ caliber.description }}</option>
     {% endfor %}
 </select>
 
-<select id="purpose" name="purpose">
-    {% for purpose in purpose_list %}
-        <option value="{{ purpose.id }}">{{ purpose.description }}</option>
+<select id="bullet" name="bullet">
+    <option value="default">--any--</option>
+    {% for bullet in bullet_list %}
+        <option value="{{ bullet.id }}">{{ bullet.purpose }}</option>
     {% endfor %}
 </select>
 
-<select id="company" name="company">
-    {% for company in company_list %}
-        <option value="{{ company.id }}">{{ company.name }}</option>
+<select id="manufacturer" name="manufacturer">
+    <option value="default">--any--</option>
+    {% for manufacturer in manufacturer_list %}
+        <option value="{{ manufacturer.id }}">{{ manufacturer.name }}</option>
     {% endfor %}
 </select>
 
-<select id="weapon" name="weapon">
-    {% for weapon in weapon_list %}
-        <option value="{{ weapon.id }}">{{ weapon.name }}</option>
+<select id="material" name="material">
+    <option value="default">--any--</option>
+    {% for material in material_list %}
+        <option value="{{ material.id }}">{{ material.name }}</option>
     {% endfor %}
 </select>
+

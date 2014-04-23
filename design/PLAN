@@ -4,11 +4,11 @@ I -- Database design adjustments
     
     A. Append "cost" and "inventory_count" attributes to Round 
 
-        ** "inventory_count" attribute helps satisfy project 2 requirement 1
+$$       ** "inventory_count" attribute helps satisfy project 2 requirement 1
 
         1) Update Artifacts
 
-            1) schema implementations (BDD etc)
+$$            1) schema implementations (BDD etc)
 
             2) fixtures
              
@@ -19,12 +19,12 @@ II -- Query Strategy implementation (satisfies project 2 requirement 3)
     A. Django/Server-side
 
         1) Object-Relational-Mapper implementation
-            a. Round
-            b. Manufacturer
-            c. Cartridge
-            d. Caliber
-            e. Buller
-            f. Material
+$$            a. Round
+$$            b. Manufacturer
+$$            c. Cartridge
+$$            d. Caliber
+$$            e. Buller
+$$            f. Material
 
 
         2) AJAX Query processing and strategy selection (JSON -> Python)
