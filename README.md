@@ -7,7 +7,7 @@ A fictional Django app running on an ammunition vending machine
 Organization
 ============
 Hosted live and generally up to date:
-    http://immense-refuge-1152.herokuapp.com/
+    http://higher-caliber.herokuapp.com/
 
 Clone URL:
     https://github.com/Melanion/Caliber.git
