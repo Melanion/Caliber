@@ -1,26 +1,46 @@
 import json
 
+from django.core import serializers
+
 from vending.views import selects
+from vending.models import Cartridge, Round, Bullet, Material, Caliber, Manufacturer
 
 def handle_update(request):
+
+    field = request.GET.get('update', 'none')
+    request.session[field] = request.GET.get( 'value', 'any' )
     
-    if "caliber" == request.GET['update']:
-        #print "updating caliber"
-        return json.dumps( selects.caliber_changed(request) )
+    results = Round.objects.all()
+    cartridge = Cartridge.objects.all()
+    manufacturer = Manufacturer.objects.all()
 
-    elif "manufacturer" == request.GET['update']:
-        #print "updating company"
-        return json.dumps( selects.manufacturer_changed(request) )
+    bullet = Bullet.objects.all()
+    if 'any' != get_value( request, 'bullet' ):
+        bullet = Bullet.objects.filter( pk = get_value(request, 'bullet') )
 
-    elif "bullet" == request.GET['update']:
-        #print "updating purpose"
-        return json.dumps( selects.bullet_changed(request) )
+    caliber = Caliber.objects.all()
+    if 'any' != get_value( request, 'caliber' ):
+        caliber = caliber.filter( pk = get_value(request, 'caliber') )
 
-    elif "material" == request.GET['update']:
-        #print "updating weapon"
-        return json.dumps( selects.material_changed(request) )
+    material = Material.objects.all()
+    if 'any' != get_value( request, 'material' ):
+        material = Material.objects.filter( pk = get_value(request, 'material') )
 
-    else:
-        print "interesting ..."
-        return json.dumps( {'action' : 'success','message':'hrrrmmm',} )
+    cartridge = cartridge.filter( bullet=bullet, 
+                                  caliber=caliber, 
+                                  material=material)
 
+    results = results.filter( cartridge=cartridge, manufacturer=manufacturer ) 
+
+    
+    context = {'action' : 'success', 
+               'results' : serializers.serialize('xml', results), }
+
+    print caliber
+
+    return json.dumps( context );
+
+    
+
+def get_value(request, field):
+    request.session[field] = request.session.get( field, 'any' )

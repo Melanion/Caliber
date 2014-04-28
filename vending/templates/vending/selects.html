@@ -10,19 +10,23 @@ $(function() {
 function buildAjaxAutoSubmit(domId) {
     //return function() {$("#" + domId).submit();};
     return function() {
+
         $.get("/", 
 
                // JSON variables to pass in the request
-               {message : 'Hello, world, from AJAX!!!',
-                update  : domId,
-                action  : 'something'}, 
+               {update  : domId,
+                value  : $("#" + domId).val()}, 
 
                 function(response) {
 
                     if ("success" == response['action']) {
-                        alert(response['message']);
+                        alert( response['results'] );
+                        /*
+                        for (var result in response['results']) {
+                            alert( result['name'] );//.name );
+                        }*/
                     } else {
-                        alert("noooooo!!!");
+                        alert(response['name']);
                     }
                 
             } ); // end jQuery POST      
@@ -30,31 +34,42 @@ function buildAjaxAutoSubmit(domId) {
 }
 </script>
 
+<div>
+Caliber:
 <select id="caliber" name="caliber">
     <option value="default">--any--</option>
     {% for caliber in caliber_list %}
         <option value="{{ caliber.id }}">{{ caliber.description }}</option>
     {% endfor %}
 </select>
+</div>
 
+<div>
+Bullet Style:
 <select id="bullet" name="bullet">
     <option value="default">--any--</option>
     {% for bullet in bullet_list %}
         <option value="{{ bullet.id }}">{{ bullet.purpose }}</option>
     {% endfor %}
 </select>
+</div>
 
+<div>
+Manufacturer
 <select id="manufacturer" name="manufacturer">
     <option value="default">--any--</option>
     {% for manufacturer in manufacturer_list %}
         <option value="{{ manufacturer.id }}">{{ manufacturer.name }}</option>
     {% endfor %}
 </select>
+</div>
 
+<div>
+Cartridge Material
 <select id="material" name="material">
     <option value="default">--any--</option>
     {% for material in material_list %}
         <option value="{{ material.id }}">{{ material.name }}</option>
     {% endfor %}
 </select>
-
+</div>

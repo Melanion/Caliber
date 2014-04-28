@@ -8,11 +8,10 @@
     {% endcomment %}
 
    <ul>
-     <a href="/manufacturer/{{ round.manufacturer }}/">{{ round.manufacturer }}</a> - {{ round.description }} - ${{ round.cost }}
-     <li>{{ round.caliber }}</li>
-     <li>{{ round.bullet }}</li>
-     <li>{{ round.material }}</li>
-     <li>{{ round.rimfire }}</li>
+     <a href="/manufacturer/{{ round.manufacturer.id }}/">{{ round.manufacturer }}</a> - {{ round.description }} - ${{ round.cost }}
+     <li>{{ round.cartridge.caliber }}</li>
+     <li>{{ round.cartridge.bullet }}</li>
+     <li>{{ round.cartridge.material }}</li>
      <li>{{ round.inventory_count }}</li>
    </ul>
 

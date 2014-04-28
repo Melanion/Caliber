@@ -4,10 +4,10 @@
      
     {% include "vending/selects.html" %}
 
-    {% if round_list %}
+    {% if results %}
         <ul>
-            {% for round in round_list %}
-                <li><a href="/rounds/{{ round.id }}/">{{ round.name }}</a></li>
+            {% for round in results %}
+                <a href="/round/{{ round.id }}/">{{ round.name }}</a><br>
             {% endfor %}
         </ul>
     {% else %}
